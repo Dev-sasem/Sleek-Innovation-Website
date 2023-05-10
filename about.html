@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleek Innovation About Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+     
+     
+     * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+.container {
+    max-width: 968px;
+    margin: auto;
+    width: 100%;
+} 
+
+
+
+/* HEADER  */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
+   
+    background-color: whitesmoke;
+
+}
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+   
+}
+
+/* HAMBURGER   */
+.hamburger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #530F53;
+    box-shadow: 5px 10px #888888;
+  }
+  
+
+/* LOGO  */
+.logo img {
+    width: 100px;
+}
+
+/* MENU  */
+
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    margin-left: 30px;
+}
+
+.nav__link{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #530F53;
+  }
+  
+  .nav__link:hover {
+    color: #fc9c01;
+  }
+.nav__link:hover {
+    color: #fc9c01;
+  }
+  
+
+.user__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 30px;
+}
+.icon__click {
+    color: #530F53;
+  }
+  
+  
+  .icon__click:hover {
+    color: #fc9c01;
+  }
+
+
+
+  
+  /* MEDIA QUERY  */
+  @media screen and (max-width: 991px) {
+    header {
+        padding: 5px 20px;
+      }
+    .nav__menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+   
+  
+    .nav__menu.active {
+        left: 0;
+    }
+  
+    .nav__item {
+        margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  
+    .invisible {
+      display: none;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: #fc9c01;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: #fc9c01;
+  }
+  }
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+   <header class="header">
+    <div class="nav container">
+        <!-- HAMBURGER  -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- LOGO  -->
+        <div class="logo">
+            <img src="Image/LOGO.png" alt="">
+        </div>
+        <!-- MENU  -->
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item"><a href="#home" class="nav__link" >Home</a></li>
+            <li class="nav__item"><a href="#shop" class="nav__link" >Shop</a></li>
+            <li class="nav__item" id="nav-item"><a href="#categories" class="nav__link" >Categories</a>
+            </li>
+            <li class="nav__item"><a href="#pages" class="nav__link" >Pages</a></li>
+            <li class="nav__item"><a href="#blog" class="nav__link" >Blog</a></li>
+        </ul>
+ 
+    <div class="user__icon">
+        <div class="icon"><a href="#">
+            <i class='icon__click bx bx-search-alt-2 bx-md' ></i>
+        </a></div>
+        <div class="invisible">
+            <div class="icon"><a href="#">
+                <i class='icon__click bx bx-user bx-md' ></i>
+            </a></div>
+            <div class="icon"><a href="#">
+                <i class='icon__click bx bx-heart bx-md' ></i>
+            </a></div>
+        </div>
+        <div class="icon"><a href="#">
+            <i class='icon__click bx bx-cart-alt bx-md' ></i>
+         </a></div>
+    </div>
+    </div>
+    </style>
+</head>
+<body>
+     <!-- HEADER -->
+   <header class="header">
+    <div class="nav container">
+        <!-- HAMBURGER  -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- LOGO  -->
+        <div class="logo">
+            <img src="Image/LOGO.png" alt="">
+        </div>
+        <!-- MENU  -->
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item"><a href="index.html" class="nav__link" >Home</a></li>
+            <li class="nav__item"><a href="shop.html" class="nav__link" >Shop</a></li>
+            <li class="nav__item" id="nav-item"><a href="#categories" class="nav__link" >Categories</a>
+            </li>
+            <li class="nav__item"><a href="about.html" class="nav__link" >About us</a></li>
+            <li class="nav__item"><a href="#blog" class="nav__link" >Contact Us</a></li>
+        </ul>
+ 
+    <div class="user__icon">
+        <div class="icon"><a href="#">
+            <i class='icon__click bx bx-search-alt-2 bx-md' ></i>
+        </a></div>
+        <div class="invisible">
+            <div class="icon"><a href="#">
+                <i class='icon__click bx bx-user bx-md' ></i>
+            </a></div>
+            <div class="icon"><a href="#">
+                <i class='icon__click bx bx-heart bx-md' ></i>
+            </a></div>
+        </div>
+        <div class="icon"><a href="#">
+            <i class='icon__click bx bx-cart-alt bx-md' ></i>
+         </a></div>
+    </div>
+    </div>
+   </header>
+
+
+   <Section class="about">
+    <div class="main container">
+        <h1>About Us</h1>
+
+        <div class="office">
+            <img src="Image/About Us pg.jpg" alt="">
+        </div>
+        <p>
+            Sleek Innovation is a modern furniture company that provides innovative and stylish furniture designs to elevate your living space. Our mission is to provide customers with high-quality furniture that not only looks great but also functions seamlessly in their daily lives. We believe that furniture should not only be aesthetically pleasing but also practical and comfortable.
+            
+            Our team of designers and craftsmen work diligently to create unique and elegant pieces that blend seamlessly into any interior decor. We source the finest materials and employ the latest techniques to ensure that every item is built to last. From living room sofas and dining sets to bedroom furniture and home office pieces, we offer a wide variety of options to suit your needs.
+            
+            At Sleek Innovation, we are committed to providing exceptional customer service and making your furniture shopping experience as smooth and enjoyable as possible. We value our customers' satisfaction and strive to exceed their expectations with every order. Choose Sleek Innovation for stylish, functional, and long-lasting furniture that will transform your home into a haven of comfort and elegance.</p>
+    </div>
+   </Section>
+
+    
+</body>
+</html>

@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sleekinnovation/dining</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Image/FAVICON.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap');
+
+
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+
+
+.container {
+    max-width: 968px;
+    margin: auto;
+    width: 100%;
+} 
+
+
+
+/* HEADER  */
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1111;
+   
+    background-color: whitesmoke;
+
+}
+
+
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+   
+}
+
+/* HAMBURGER   */
+.hamburger {
+    display: none;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #530F53;
+    box-shadow: 5px 10px #888888;
+  }
+  
+
+/* LOGO  */
+.logo img {
+    width: 100px;
+}
+
+/* MENU  */
+
+.nav__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__item {
+    margin-left: 30px;
+}
+
+.nav__link{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #530F53;
+  }
+  
+  .nav__link:hover {
+    color: #fc9c01;
+  }
+.nav__link:hover {
+    color: #fc9c01;
+  }
+  
+
+.user__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.invisible {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    margin-left: 30px;
+}
+.icon__click {
+    color: #530F53;
+  }
+  
+  
+  .icon__click:hover {
+    color: #fc9c01;
+  }
+
+
+  /* Dining */
+
+
+
+  .bg__dining {
+  position: relative;
+  }
+
+.bg__dining p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  color: #530F53;
+  font-weight: bold;
+  font-size: 5em;
+  font-family :'lato', sans-serif;
+  }
+
+.bg__dining img {
+  width: 100%;
+  height: 70%;
+  }
+
+/* left ======================================================================== */
+  .left1 {
+    color: #530F53;
+    margin-top: 50px;
+  }
+  .left1 h2 {
+    margin-top: 50px;
+    margin-bottom: 10px;
+  }
+  .star {
+    color: #fc9c01;
+  }
+
+  .rated {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin: 5px;
+  }
+  .rated img{
+    width: 100px;
+
+  }
+
+  .rated h2 {
+    margin-top: 3px;
+    margin-left: 10px;
+  }
+
+  hr {
+    width: 300px;
+  }
+   .ad {
+    width: 300px;
+    margin-top: 10px;
+   }
+   .right1 {
+    margin-left: 20px;
+   }
+   .both {
+    display: flex;
+    
+   }
+   .cont {
+    margin-top: 10px;
+   }
+
+   .cont h1 , p {
+    text-align: center;
+    color: #530F53;
+    font-family: roboto;
+   }
+
+
+
+   /* footer  */
+   ul {
+    margin: 0px;
+    padding: 0px;
+}
+.footer-section {
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: #ff5e14;
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #757575;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+    max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+      color: #7e7e7e;
+  line-height: 28px;
+}
+.footer-social-icon span {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 20px;
+}
+.footer-social-icon a {
+  color: #fff;
+  font-size: 16px;
+  margin-right: 15px;
+}
+.footer-social-icon i {
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 50%;
+}
+.facebook-bg{
+  background: #3B5998;
+}
+.twitter-bg{
+  background: #55ACEE;
+}
+.google-bg{
+  background: #DD4B39;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: #ff5e14;
+}
+.footer-widget ul li {
+  display: inline-block;
+  /* float: left; */
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover{
+  color: #ff5e14;
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.subscribe-form {
+  position: relative;
+  overflow: hidden;
+}
+.subscribe-form input {
+  width: 100%;
+  padding: 14px 28px;
+  background: #2E2E2E;
+  border: 1px solid #2E2E2E;
+  color: #fff;
+}
+.subscribe-form button {
+    position: absolute;
+    right: 0;
+    background: #ff5e14;
+    padding: 13px 20px;
+    border: 1px solid #ff5e14;
+    top: 0;
+}
+.subscribe-form button i {
+  color: #fff;
+  font-size: 22px;
+  transform: rotate(-6deg);
+}
+.copyright-area{
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a{
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a{
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+
+/* footer  */
+
+
+
+
+
+  /* MEDIA QUERY  */
+  @media screen and (max-width: 991px) {
+    header {
+        padding: 5px 20px;
+      }
+    .nav__menu {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+   
+  
+    .nav__menu.active {
+        left: 0;
+    }
+  
+    .nav__item {
+        margin: 2.5rem 0;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+  }
+  
+    .invisible {
+      display: none;
+    }
+    
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+      background-color: #fc9c01;
+  }
+  
+  .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+      background-color: #fc9c01;
+  }
+  }
+
+    </style>
+</head>
+<body>
+    <!-- HEADER -->
+   <header class="header">
+    <div class="nav container">
+        <!-- HAMBURGER  -->
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- LOGO  -->
+        <div class="logo">
+            <img src="Image/LOGO.png" alt="">
+        </div>
+        <!-- MENU  -->
+        <ul class="nav__menu" id="nav-menu">
+            <li class="nav__item"><a href="index.html" class="nav__link" >Home</a></li>
+            <li class="nav__item"><a href="shop.html" class="nav__link" >Shop</a></li>
+            <li class="nav__item" id="nav-item"><a href="#categories" class="nav__link" >Categories</a>
+            </li>
+            <li class="nav__item"><a href="about.html" class="nav__link" >About Us</a></li>
+            <li class="nav__item"><a href="#blog" class="nav__link" >Contact us</a></li>
+        </ul>
+ 
+    <div class="user__icon">
+        <div class="icon"><a href="#">
+            <i class='icon__click bx bx-search-alt-2 bx-md' ></i>
+        </a></div>
+        <div class="invisible">
+            <div class="icon"><a href="#">
+                <i class='icon__click bx bx-user bx-md' ></i>
+            </a></div>
+            <div class="icon"><a href="#">
+                <i class='icon__click bx bx-heart bx-md' ></i>
+            </a></div>
+        </div>
+        <div class="icon"><a href="#">
+            <i class='icon__click bx bx-cart-alt bx-md' ></i>
+         </a></div>
+    </div>
+    </div>
+   </header>
+
+   <section id="dining">
+    <div class="bg__dining">
+        <img src="Image/dn bg.jpg" alt="">
+      </div>
+   </section>
+   <section class="item">
+   <div class="both container">
+    <div class="left1">
+        <h2>TOP RATED PRODUCTS</h2>
+        <div class="rated">
+            <div class="img">
+                <img src="Image/dn8.png" alt="">
+            </div>
+            <h2>
+                White Dining Sets
+              <div class="star">
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+              </div>
+            </h2>
+        </div>
+        <hr>
+        <div class="rated">
+            <div class="img">
+                <img src="Image/sf10.jpg" alt="">
+            </div>
+            <h2>
+                White Sofa
+              <div class="star">
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+              </div>
+            </h2>
+        </div>
+        <hr>
+        <div class="rated">
+            <div class="img">
+                <img src="Image/bd6.png" alt="">
+            </div>
+            <h2>
+                White Upholstery bed
+              <div class="star">
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+                <i class='st bx bxs-star' undefined ></i>
+              </div>
+            </h2>
+        </div>
+        <hr>
+
+        <div class="ad">
+            <img src="Image/FLYER1.jpg" alt="">
+        </div>
+
+    </div>
+    <div class="right1">
+
+
+        <div class="big-product container">
+            <div class="product-flex">
+               <div class="product-one">
+                    <div class="product-image">
+                       <img src="Image/dn1.png" alt="">
+                       <div class="overlay">
+                           <i class='icon__click bx bx-cart bx-sm'></i>
+                           <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                           <i class='icon__click bx bx-heart bx-sm'></i>
+                       </div>
+                   </div>
+                   <div class="content">
+                       <div class="left">
+                           <h4>
+                               Brown Dining 
+                           </h4>
+                       </div>
+                       <div class="right">
+                           <section>₦100,000</section>
+                       </div>
+                   </div>
+                   <article>decoration</article>
+               </div>
+                   <div class="product-one">
+                   <div class="product-image">
+                   <img src="Image/dn2.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                           Black shining Dining
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦110,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+           <div class="product-one">
+               <div class="product-image">
+                   <img src="Image/dn3.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                       Double set Dining
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦70,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+          
+           </div>
+
+           <div class="big-product container">
+            <div class="product-flex">
+               <div class="product-one">
+                    <div class="product-image">
+                       <img src="Image/dn4.png" alt="">
+                       <div class="overlay">
+                           <i class='icon__click bx bx-cart bx-sm'></i>
+                           <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                           <i class='icon__click bx bx-heart bx-sm'></i>
+                       </div>
+                   </div>
+                   <div class="content">
+                       <div class="left">
+                           <h4>
+                               Rectangle Dining 
+                           </h4>
+                       </div>
+                       <div class="right">
+                           <section>₦160,000</section>
+                       </div>
+                   </div>
+                   <article>decoration</article>
+               </div>
+                   <div class="product-one">
+                   <div class="product-image">
+                   <img src="Image/dn5.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                           Kitchen cabinet
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦500,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+           <div class="product-one">
+               <div class="product-image">
+                   <img src="Image/dn6.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                       Circular Single Sofa
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦100,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+          
+           </div>
+
+           <div class="big-product container">
+            <div class="product-flex">
+               <div class="product-one">
+                    <div class="product-image">
+                       <img src="Image/dn7.png" alt="">
+                       <div class="overlay">
+                           <i class='icon__click bx bx-cart bx-sm'></i>
+                           <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                           <i class='icon__click bx bx-heart bx-sm'></i>
+                       </div>
+                   </div>
+                   <div class="content">
+                       <div class="left">
+                           <h4>
+                               6X6 Upholstery Bed 
+                           </h4>
+                       </div>
+                       <div class="right">
+                           <section>₦160,000</section>
+                       </div>
+                   </div>
+                   <article>decoration</article>
+               </div>
+                   <div class="product-one">
+                   <div class="product-image">
+                   <img src="Image/dn8.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                           Kitchen cabinet
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦500,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+           <div class="product-one">
+               <div class="product-image">
+                   <img src="Image/dn9.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                       Circular Single Sofa
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦100,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+          
+           </div>
+
+           <div class="big-product ">
+            <div class="product-flex">
+               <div class="product-one">
+                    <div class="product-image">
+                       <img src="Image/dn10.png" alt="">
+                       <div class="overlay">
+                           <i class='icon__click bx bx-cart bx-sm'></i>
+                           <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                           <i class='icon__click bx bx-heart bx-sm'></i>
+                       </div>
+                   </div>
+                   <div class="content">
+                       <div class="left">
+                           <h4>
+                               6X6 Upholstery Bed 
+                           </h4>
+                       </div>
+                       <div class="right">
+                           <section>₦160,000</section>
+                       </div>
+                   </div>
+                   <article>decoration</article>
+               </div>
+                   <div class="product-one">
+                   <div class="product-image">
+                   <img src="Image/dn11.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                           Kitchen cabinet
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦500,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+           <div class="product-one">
+               <div class="product-image">
+                   <img src="Image/dn12.png" alt="">
+                   <div class="overlay">
+                       <i class='icon__click bx bx-cart bx-sm'></i>
+                       <i class='icon__click bx bxs-bullseye bx-sm'></i>
+                       <i class='icon__click bx bx-heart bx-sm'></i>
+                   </div>
+               </div>
+               <div class="content">
+                   <div class="left">
+                       <h4>
+                       Circular Single Sofa
+                       </h4>
+                   </div>
+                   <div class="right">
+                       <section>₦100,000</section>
+                   </div>
+               </div>
+               <article>decoration</article>
+           </div>
+          
+           </div>
+
+          <div class="cont">
+            <h1>Must Know About Dining</h1>
+            <p>Dining sets are an important investment for any home. Not only do they provide a space for meals, but they also serve as a gathering place for family and friends. When choosing a dining set, it's important to consider your needs and the available space in your home. Dining sets come in a variety of sizes, styles, and materials, from traditional wood to modern glass and metal. Some sets also come with additional features, such as extendable tables or cushioned seating. It's important to choose a set that fits your aesthetic preferences, lifestyle, and budget. With the right dining set, you can create a comfortable and stylish space for dining and entertaining in your home.</p>
+     </div>
+          </div>
+   </div>
+   </section>
+
+   <footer>
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png" class="img-fluid" alt="logo"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor incididuntut consec tetur adipisicing
+                                elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://codepen.io/anupkumar92/">Anup</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+   </footer>
+    
+
+
+
+   <script src="main.js"></script>
+</body>
+</html>
